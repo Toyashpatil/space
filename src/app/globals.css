@@ -81,7 +81,7 @@ body {
 
 }
 
-@media (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 150px) and (max-width: 768px) {
   .one_page {
     background-image: url('../../public/background-home-mobile.jpg');
     height: 100vh;
