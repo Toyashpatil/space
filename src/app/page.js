@@ -1,7 +1,7 @@
 "use client"
 import NavMo from '@/components/NavMo';
 import Navbar from '@/components/Navbar';
-import AuthContext from '@/context/authContext'
+import AuthContext from '@/context/AuthContext'
 import Image from 'next/image'
 import { useContext } from 'react'
 import Link from 'next/link';
