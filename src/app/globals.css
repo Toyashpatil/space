@@ -96,15 +96,17 @@ body {
     background-image: url('../../public/destination/background-destination-mobile.jpg');
     height: 100vh;
     width: 100vw;
+    padding: 5px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover ;
   }
 
   .crew_page {
     background-image: url('../../public/Crew/background-crew-mobile.jpg');
     height: 100vh;
     width: 100vw;
+    padding: 5px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -122,6 +124,26 @@ body {
   .Navbar_main {
     display: none;
   }
+  .down_bar{
+    position: relative;
+    width: max-content;
+  }
+  .down_bar::after{
+    content: "";
+    position: absolute;
+    cursor: pointer;
+    bottom: -10px;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    background-color: white;
+    transition-timing-function:ease-in-out ;
+    transform: scaleX(0);
+  }
+  .down_bar:hover::after{
+    transform: scaleX(1);
+  }
+  
 }
 
 @media (min-width: 768px) {
@@ -137,6 +159,25 @@ body {
 
   .Navbar_mobile {
     display: none;
+  }
+  .down_bar{
+    position: relative;
+    width: max-content;
+  }
+  .down_bar::after{
+    content: "";
+    position: absolute;
+    cursor: pointer;
+    bottom: -35px;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    background-color: white;
+    transition-timing-function:ease-in-out ;
+    transform: scaleX(0);
+  }
+  .down_bar:hover::after{
+    transform: scaleX(1);
   }
 
   .two_page {
@@ -172,34 +213,13 @@ body {
 
 .text_one {
   font-family: 'Bellefair', serif;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Poppins', sans-serif;
 }
 
 .text_two {
   font-family: 'Barlow Condensed', sans-serif;
 }
 
-.down_bar{
-  position: relative;
-  width: max-content;
-}
-.down_bar::after{
-  content: "";
-  position: absolute;
-  cursor: pointer;
-  bottom: -35px;
-  height: 2px;
-  width: 100%;
-  left: 0;
-  background-color: white;
-  transition-timing-function:ease-in-out ;
-  transform: scaleX(0);
-}
-.down_bar:hover::after{
-  transform: scaleX(1);
-}
+
 
 
 

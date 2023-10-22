@@ -14,7 +14,7 @@ const Navbar = () => {
                 </div>
                 {/* #FFFF00 */}
                 <div className=' w-[100%] Glass_morph gap-10 ml-[500px]  h-[100%] items-center justify-end  flex'>
-                    <div className=' w-[100%] justify-end flex mr-60 gap-11'>
+                    <div className="w-[100%] justify-end flex mr-60 gap-11 text_two font-medium  ">
                         <div className=' down_bar cursor-pointer '>
                             <Link href="/"><button>00 Home</button></Link>
                         </div>

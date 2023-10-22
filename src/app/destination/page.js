@@ -1,4 +1,5 @@
 "use client"
+import NavMo from '@/components/NavMo'
 import Navbar from '@/components/Navbar'
 import PlanInfo from '@/components/PlanInfo'
 import AuthContext from '@/context/AuthContext'
@@ -42,10 +43,13 @@ const page = () => {
 
   return (
     <main className='two_page'>
-      <div>
+      <div className='Navbar_main'>
         <Navbar />
       </div>
-      <div className=' h-[80%] w-[100%] items-center justify-center gap-60  mt-2 flex'>
+      <div className='Navbar_mobile'>
+        <NavMo />
+      </div>
+      <div className=' Navbar_main h-[80%] w-[100%] items-center justify-center gap-60  mt-2 flex'>
         <div className=' ml-[200px] h-[80%] w-[30%]  '>
 
           <div className=' mt-20 ml-10  flex items-center justify-center'>
@@ -56,8 +60,8 @@ const page = () => {
           </div>
 
         </div>
-        <div className=' h-[80%] w-[50%] z-10 flex-col gap-10 items-start justify-center space-y-10  '>
-          <div className='flex gap-10 items-start justify-center'>
+        <div className=" h-[80%] w-[50%] z-10 flex-col gap-10 items-start justify-center space-y-10  ">
+          <div className="flex gap-10 items-start justify-center text_two text-[#D0D6F9] ">
             {planet.map((planetName, index) => (
               <button key={index} onClick={() => { setPlanetIndex(index) }}><h1 className='text-[20px] down_bar ' key={index}>{planetName}</h1></button>
             ))}
@@ -69,6 +73,56 @@ const page = () => {
             number={planetInfo[planetIndex].num}
           />
         </div>
+      </div>
+      <div className=' Navbar_mobile space-y-3'>
+        <div>
+          <div className='  flex items-center justify-center'>
+            <Image src={planetInfo[planetIndex].source}
+              width={150}
+              height={150}
+            />
+          </div>
+        </div>
+        <div>
+          <div className="flex gap-4 items-start justify-center text_two text-[#D0D6F9] ">
+            {planet.map((planetName, index) => (
+              <button key={index} onClick={() => { setPlanetIndex(index) }}><h1 className='text-[14px] down_bar ' key={index}>{planetName}</h1></button>
+            ))}
+          </div>
+        </div>
+        <div>
+          <div className='flex gap-10 items-start justify-center space'>
+            <h1 className="text-[56px] text_one ">{planetInfo[planetIndex].title}</h1>
+          </div>
+        </div>
+        <div>
+          <div className='flex gap-10 items-start justify-center space'>
+            <h1 className="text-[15px] text_two text-center text-[#D0D6F9] ">{planetInfo[planetIndex].desc}</h1>
+          </div>
+        </div>
+        <div className='flex justify-center items-center'>
+          <div className="flex-col text_two ">
+            <div>
+              <h1 className=' text-center text-[#D0D6F9]'>Avg. Distance</h1>
+            </div>
+            <div>
+              <h1 className=' text-center text-[28px]'>{planetInfo[planetIndex].num}</h1>
+            </div>
+          </div>
+
+        </div>
+        <div className='flex justify-center items-center'>
+          <div className="flex-col text_two ">
+            <div>
+              <h1 className=' text-center text-[#D0D6F9]'>Avg. Distance</h1>
+            </div>
+            <div>
+              <h1 className=' text-center text-[28px]'>{planetInfo[planetIndex].num}</h1>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </main>
   )
