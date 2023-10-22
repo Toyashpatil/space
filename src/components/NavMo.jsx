@@ -38,7 +38,7 @@ const NavMo = () => {
                                 <Link href='/' onClick={() => {
                                     setOpen((prev) => !prev)
                                 }
-                                }  ><h1 className=" text_two ">00 Hello</h1></Link>
+                                }  ><h1 className=" text_two ">00 Home</h1></Link>
                             </div>
                             <div>
                                 <Link href='/destination' onClick={() => {
