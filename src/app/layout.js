@@ -1,5 +1,5 @@
 
-import Authstate from '@/context/AuthState'
+import Authstate from '@/context/Authstate'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
