@@ -114,10 +114,10 @@ const page = () => {
         <div className='flex justify-center items-center'>
           <div className="flex-col text_two ">
             <div>
-              <h1 className=' text-center text-[#D0D6F9]'>Avg. Distance</h1>
+              <h1 className=' text-center text-[#D0D6F9]'>Est. travel time</h1>
             </div>
             <div>
-              <h1 className=' text-center text-[28px]'>{planetInfo[planetIndex].num}</h1>
+              <h1 className=' text-center text-[28px]'>{planetInfo[planetIndex].year}</h1>
             </div>
           </div>
 
