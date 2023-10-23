@@ -17,22 +17,58 @@ const NavMo = () => {
                     />
                 </div>
                 <div className=' w-[100%] gap-10 justify-end flex mr-10 '>
-                    <button onClick={() => {
-                        setOpen((prev) => !prev)
-                    }
-                    }>
-                        <Image
-                            src="/Group2.png"
-                            width={20}
-                            height={20}
-                        />
-                    </button>
+                    <div>
+                        <button onClick={() => {
+                            setOpen((prev) => !prev)
+                        }
+                        }>
+                            <Image
+                                src="/Group2.png"
+                                width={20}
+                                height={20}
+                            />
+                        </button>
+                        <div>
+                            {open && <div className="flex  items-center overflow-hidden  justify-center">
+                                <div className=" scale-up-tr  absolute rounded-lg Glass_morph flex items-center  justify-center mt-[200px] mr-[200px] h-[200px] w-[200px] ">
+                                    <div className='flex-col space-y-5'>
+                                        <div>
+                                            <Link href='/' onClick={() => {
+                                                setOpen((prev) => !prev)
+                                            }
+                                            }  ><h1 className=" text_two ">00 Home</h1></Link>
+                                        </div>
+                                        <div>
+                                            <Link href='/destination' onClick={() => {
+                                                setOpen((prev) => !prev)
+                                            }
+                                            } ><h1 className=" text_two ">01 Destination</h1></Link>
+                                        </div>
+                                        <div>
+                                            <Link href='/crew' onClick={() => {
+                                                setOpen((prev) => !prev)
+                                            }
+                                            } ><h1 className=" text_two ">02 Crew</h1></Link>
+                                        </div>
+                                        <div>
+                                            <Link href='/tech' onClick={() => {
+                                                setOpen((prev) => !prev)
+                                            }
+                                            }><h1 className=" text_two ">03 Technology</h1></Link>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>}
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
             <div className='absolute'>
-                {open && <div className="flex  items-center  justify-center">
-                    <div className=" scale-up-tr  absolute rounded-lg Glass_morph flex items-center mt-[320px] ml-[200px] justify-center w-[200px]  h-[200px] ">
+                {/* {open && <div className="flex  items-center overflow-hidden  justify-center">
+                    <div className=" scale-up-tr  absolute rounded-lg Glass_morph flex items-center mt-[320px] ml-[150px] justify-center w-[200px]  h-[200px] ">
                         <div className='flex-col space-y-5'>
                             <div>
                                 <Link href='/' onClick={() => {
@@ -61,7 +97,7 @@ const NavMo = () => {
                         </div>
 
                     </div>
-                </div>}
+                </div>} */}
 
             </div>
         </div>
