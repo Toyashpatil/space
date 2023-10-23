@@ -52,8 +52,8 @@ const page = () => {
       <div className=' Navbar_main h-[80%] w-[100%] items-center justify-center gap-60  mt-2 flex'>
         <div className=' ml-[200px] h-[80%] w-[30%]  '>
 
-          <div className=' mt-20 ml-10  flex items-center justify-center'>
-            <Image src={planetInfo[planetIndex].source}
+          <div className=' image mt-20 ml-10  flex items-center justify-center'>
+            <Image  className='image' src={planetInfo[planetIndex].source}
               width={300}
               height={300}
             />
@@ -76,8 +76,8 @@ const page = () => {
       </div>
       <div className=' Navbar_mobile space-y-3'>
         <div>
-          <div className='  flex items-center justify-center'>
-            <Image src={planetInfo[planetIndex].source}
+          <div className=' flex items-center justify-center'>
+            <Image className='image' src={planetInfo[planetIndex].source}
               width={150}
               height={150}
             />

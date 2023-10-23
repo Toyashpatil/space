@@ -41,7 +41,7 @@ export default function Home() {
         <div className=' h-[80%] w-[40%] z-10 flex items-end justify-center'>
           <Link href="/destination">
             <button>
-              <div className='bg-[#ffff] h-[274px] w-[274px] rounded-full flex hover:ring-[50px] items-center justify-center'>
+              <div className=' zoom-in-out-box bg-[#ffff] h-[274px] w-[274px] rounded-full flex hover:ring-[50px] items-center justify-center'>
                 <div>
                   <h1 className=" text_one text-[#000000]  text-[32px]">Explore</h1>
                 </div>
@@ -78,7 +78,7 @@ export default function Home() {
         <div className='flex items-center justify-center'>
           <Link href="/destination">
             <button>
-              <div className='bg-[#ffff] h-[150px] w-[150px] rounded-full flex hover:ring-[50px] items-center justify-center'>
+              <div className='bg-[#ffff] zoom-in-out-box h-[150px] w-[150px] rounded-full flex hover:ring-[50px] items-center justify-center'>
                 <div>
                   <h1 className=" text_one text-[#000000]  text-[32px]">Explore</h1>
                 </div>

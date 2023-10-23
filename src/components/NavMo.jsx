@@ -28,9 +28,9 @@ const NavMo = () => {
                                 height={20}
                             />
                         </button>
-                        <div>
-                            {open && <div className="flex  items-center overflow-hidden  justify-center">
-                                <div className=" scale-up-tr  absolute rounded-lg Glass_morph flex items-center  justify-center mt-[200px] mr-[200px] h-[200px] w-[200px] ">
+                        <div className='menu'>
+                            {open && <div className="flex menu  items-center overflow-hidden  justify-center">
+                                <div className=" scale-up-tr menu  absolute rounded-lg Glass_morph flex items-center  justify-center mt-[200px] mr-[200px] h-[200px] w-[200px] ">
                                     <div className='flex-col space-y-5'>
                                         <div>
                                             <Link href='/' onClick={() => {
